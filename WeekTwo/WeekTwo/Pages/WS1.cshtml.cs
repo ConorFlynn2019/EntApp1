@@ -12,5 +12,8 @@ namespace WeekTwo.Pages
         public void OnGet()
         {
         }
+
+        public string[] MyTestArray { get; set; } = { "England", "Scotland", "Ireland", "Wales" };
+
     }
 }
