@@ -14,4 +14,7 @@
     <Folder Include="wwwroot\" />
     <Folder Include="Pages\" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\EmptyHTMLFile.html" />
+  </ItemGroup>
 </Project>
