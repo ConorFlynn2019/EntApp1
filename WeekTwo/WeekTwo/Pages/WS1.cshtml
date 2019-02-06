@@ -1,24 +1,38 @@
 ﻿@page
 @model WeekTwo.Pages.WS1Model
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
-
-    <ul>
-    @foreach (string countries in @Model.MyTestArray){
-
-        <li>@countries</li>
-
-    }
-
-    </ul>
 }
 
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Worksheet One - Conor Flynn </title>
 </head>
 <body>
+
+    <h1>Example of list using Array:</h1>
+    <ul>
+        @foreach (string countries in @Model.MyTestArray){
+
+            <li>@countries</li>
+
+        }
+
+    </ul>
+
+    <h2>@Model.Message</h2>
+    
+    <form method="post">
+
+        
+        <label asp-for=UserName>Enter your name: </label>
+        <input asp-for=UserName />
+
+        <button type="submit">Submit</button>
+
+    </form>
 
 </body>
 </html>

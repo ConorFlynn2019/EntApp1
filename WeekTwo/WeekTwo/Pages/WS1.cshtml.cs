@@ -9,11 +9,30 @@ namespace WeekTwo.Pages
 {
     public class WS1Model : PageModel
     {
-        public void OnGet()
-        {
+        public string Message { get; set; }
+
+
+        public void OnGet(){
+
+            Message = "Hello";
         }
 
         public string[] MyTestArray { get; set; } = { "England", "Scotland", "Ireland", "Wales" };
 
+
+
+        [BindProperty]
+        public string UserName { get; set; }
+
+
+        /*used when info isnt compulsory! Doesnt have as many pre-completed info as above
+        [BindProperty]
+        public int? NumberOne { get; set; }
+        */
+
+        public void OnPost(){
+
+            Message = String.Format("Hello {0}!", UserName);
+        }
     }
 }

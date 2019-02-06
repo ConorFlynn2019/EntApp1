@@ -1,0 +1,42 @@
+﻿@page
+@model WeekTwo.Pages.WS1BModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Worksheet One Part B - Conor Flynn </title>
+</head>
+<body>
+
+    <h1>Adding Numbers:</h1>
+
+    <form method="post">
+
+
+        <label asp-for=NumberOne>Enter number one: </label>
+        <input asp-for=NumberOne />
+
+        <label asp-for=NumberTwo>Enter number two: </label>
+        <input asp-for=NumberTwo />
+
+        <fieldset>
+            <legend>Make your selection</legend>
+            <input type="radio" name="type" value="plus" id="plus" /><label for="plus">Plus</label>
+            <input type="radio" name="type" value="minus" id="minus" /><label for="minus">Minus</label>
+            <input type="radio" name="type" value="multiply" id="multiply" /><label for="multiply">Multiply</label>
+            <input type="radio" name="type" value="divide" id="divide" /><label for="divide">Divide</label>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+
+</form>
+
+    <h2>@Model.Result</h2>
+    <h2>@Model.Message</h2>
+
+</body>
+</html>
