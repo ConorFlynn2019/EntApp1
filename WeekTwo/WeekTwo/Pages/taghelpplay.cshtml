@@ -1,0 +1,58 @@
+﻿@page
+@model WeekTwo.Pages.taghelpplayModel
+@{
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <form method="post">
+
+        <label asp-for=Number1>Number 1</label>
+        <input asp-for=Number1 />
+
+        <label asp-for=Number2></label>
+        <input asp-for=Number2 />
+
+        <label asp-for=Double1></label>
+        <input asp-for=Double1 />
+
+        <label asp-for=Double2></label>
+        <input asp-for=Double2 />
+
+        <label asp-for=Decimal1></label>
+        <input asp-for=Decimal1 />
+
+        <label asp-for=Decimal2></label>
+        <input asp-for=Decimal2 />
+
+        <label asp-for=Float1></label>
+        <input asp-for=Float1 />
+
+        <label asp-for=Float2></label>
+        <input asp-for=Float2 />
+
+        <label asp-for=Date1></label>
+        <input asp-for=Date1 />
+
+        <label for="Winter">
+
+            <input value="Winter" id="Winter" type="radio" asp-for=Season > Winter
+        </label>
+
+        <label for="Summer">
+
+            <input value="Summer" id="Summer" type="radio" asp-for=Season> Summer
+        </label>
+
+        <button type="submit">Submit</button>
+
+
+    </form>
+</body>
+</html>
