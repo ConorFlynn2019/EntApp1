@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -42,6 +43,7 @@ namespace WeekTwo.Pages
         public float? Float2 { get; set; }
 
         [BindProperty]
-        public DateTime Datet1 { get; set; }
+        [DataType(DataType.Date)]
+        public DateTime Date1 { get; set; }
     }
 }
