@@ -1,0 +1,32 @@
+﻿@page
+@model FormWSModel
+@{
+
+    ViewData["Title"] = "Error";
+}
+
+
+<form method="post">
+
+    <label asp-for=ProductCode>Product Code</label>
+    <input asp-for=ProductCode />
+
+
+    <label for="Red">
+
+        <input value="Red" id="Red" type="radio" asp-for=Colour> Red
+    </label>
+
+    <label for="Yellow">
+
+        <input value="Yellow" id="Yellow" type="radio" asp-for=Colour> Yellow
+    </label>
+
+    <label for="Black">
+
+        <input value="Black" id="Black" type="radio" asp-for=Colour> Black
+    </label>
+
+    <button type="submit">Submit</button>
+
+</form>
