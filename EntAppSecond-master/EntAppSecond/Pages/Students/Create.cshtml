@@ -1,0 +1,30 @@
+﻿@page
+@model CreateModel
+@{
+}
+
+
+<form method="post">
+
+    <div asp-validation-summary="All"></div>
+    <span asp-validation-for="Student.StudentID"></span>
+    <div>
+        <label asp-for=Student.FirstName></label>
+        <input asp-for=Student.FirstName></label>
+    </div>
+
+    <div>
+        <label asp-for=Student.LastName></label>
+        <input asp-for=Student.LastName></label>
+    </div>
+
+    <div>
+        <label asp-for=Student.StudentID></label>
+        <input asp-for=Student.StudentID></label>
+    </div>
+
+    <button type="submit">Press Me!</button>
+
+
+
+</form>
