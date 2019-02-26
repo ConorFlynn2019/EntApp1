@@ -17,6 +17,11 @@ namespace EntAppSecond.Pages.Students
 
         public void OnGet()
         {
+
+            //if(Student.StudentEmail != Student.EmailReconfirmation)
+            //{
+             //   ModelState.AddModelError(Student.StudentEmail, "Emails do not match");
+            //}
         }
     }
 }

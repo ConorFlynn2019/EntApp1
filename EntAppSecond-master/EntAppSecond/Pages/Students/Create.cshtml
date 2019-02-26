@@ -7,7 +7,7 @@
 <form method="post">
 
     <div asp-validation-summary="All"></div>
-    <span asp-validation-for="Student.StudentID"></span>
+
     <div>
         <label asp-for=Student.FirstName></label>
         <input asp-for=Student.FirstName></label>
@@ -21,6 +21,32 @@
     <div>
         <label asp-for=Student.StudentID></label>
         <input asp-for=Student.StudentID></label>
+        <span asp-validation-for="Student.StudentID"></span>
+    </div>
+
+    <div>
+        <label asp-for=Student.DateOfBirth></label>
+        <input asp-for=Student.DateOfBirth></label>
+    </div>
+
+    <div>
+        <label asp-for=Student.Modules></label>
+        <input asp-for=Student.Modules></label>
+    </div>
+
+    <div>
+        <label asp-for=Student.Height></label>
+        <input asp-for=Student.Height></label>
+    </div>
+
+    <div>
+        <label asp-for=Student.StudentEmail></label>
+        <input asp-for=Student.StudentEmail></label>
+    </div>
+
+    <div>
+        <label asp-for=Student.EmailReconfirmation></label>
+        <input asp-for=Student.EmailReconfirmation></label>
     </div>
 
     <button type="submit">Press Me!</button>
